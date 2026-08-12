@@ -5,9 +5,9 @@ pipeline {
             steps {
                 echo 'Verifying project files...'
 
-                bat 'if exist index.html (echo index.html Found) else (exit 1)'
-                bat 'if exist style.css (echo style.css Found) else (exit 1)'
-                bat 'if exist script.js (echo script.js Found) else (exit 1)'
+                bat 'if exist calculator.py  (echo calculator.py Found) else (exit 1)'
+                bat 'if exist jenkins (echo jenkins Found) else (exit 1)'
+                bat 'if exist requirements.txt (echo requirements.txt Found) else (exit 1)'
             }
         }
         stage('Create Build Artifact') {
